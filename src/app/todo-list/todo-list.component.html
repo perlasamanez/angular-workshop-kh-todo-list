@@ -1,2 +1,9 @@
 <p>{{ todoItem.description }}</p>
+
+<!-- Two-way Binding -->
+<div>
+    <label>Description: </label>
+    <input [(ngModel)]="todoItem.description" placeholder="description"/>
+</div>
+
 <app-todo-detail></app-todo-detail>
