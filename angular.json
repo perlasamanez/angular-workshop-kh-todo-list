@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-workshop-kh-todo-list"
+    }
+  },
+  "defaultProject": "angular-workshop-kh-todo-list",
+  "cli": {
+    "analytics": "8556d470-d178-4bca-b30c-927949eade5a"
+  }
 }
