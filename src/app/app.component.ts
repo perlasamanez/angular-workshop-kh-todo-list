@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-workshop-kh-todo-list';
+  title = 'Knight Hacks To-Do List App';
 }
