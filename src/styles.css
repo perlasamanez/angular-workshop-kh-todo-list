@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{ font-family: Arial, Helvetica, sans-serif;}
+
+h1 {
+    color:#DDC049;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+h2, h3, h4, h5 {
+    text-align: center;
+}
+
+p {
+    font-size: 16px
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+hr { 
+    background-color: #D8D8D8;
+    border-color: #D8D8D8;
+    height: 1px; 
+    border: 0; 
+}
+
+.button-add {
+    background-color: #4CAF50;;
+}
+
+.button-delete {
+    background-color: #ff6961;
+}
+
+.container {
+    margin: auto;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.close {
+    margin-left: 10px;
+}
+
+.editItem {
+    margin-top: 10px;
+}
+
+.editItem a{
+    cursor: pointer; 
+    color: 	#9E9E9E;   
+}

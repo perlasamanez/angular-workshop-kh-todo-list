@@ -1,23 +1,24 @@
-<!-- <p>{{ todoItem.description }}</p> -->
-
 <div>
-    <label>Description: </label>
-    <input class="form-control" [(ngModel)]="todoItem.description" placeholder="description"/>
+    <label>Task </label>
+    <input class="form-control" [(ngModel)]="todoItem.description" placeholder="Add your task here..."/>
     <div>
-        <button (click)="addItem()">Add Item</button>
+        <button class="button-add" (click)="addItem()">Add</button>
     </div>
 </div>
 
 <div *ngIf="todoListItems.length">
     <div *ngFor="let item of todoListItems; index as i">
-        <div>
-            <small (click)="item.canEdit = true">Edit</small>
-            <small (click)="item.canEdit = false">Close</small>
-            <p>{{ item.description }}</p>
+        <div class="editItem">
+            <a (click)="item.canEdit = true"><small >Edit</small></a>
+            <a *ngIf="item.canEdit" (click)="item.canEdit = false" class="close"><small >Close</small></a>
+            <div>
+                <p>{{ item.description }}</p>
+            </div>
             <input *ngIf="item.canEdit" [(ngModel)]="item.description"/>
         </div>
         <div>
-            <button (click)="deleteItem(i)">Delete Item</button>
+            <button class="button-delete" (click)="deleteItem(i)">Delete</button>
         </div>
+        <hr/>
     </div>
 </div>
