@@ -1,15 +1,15 @@
 <div>
     <label>Task </label>
-    <input class="form-control" [(ngModel)]="todoItem.description" placeholder="Add your task here..."/>
+    <input [(ngModel)]="todoItem.description" placeholder="Add your task here..."/>
     <div>
-        <button class="button-add" (click)="addItem()">Add</button>
+        <button (click)="addItem()">Add</button>
     </div>
 </div>
 
 <div *ngIf="todoListItems.length">
     <div *ngFor="let item of todoListItems; index as i">
         <div class="editItem">
-            <a (click)="item.canEdit = true"><small >Edit</small></a>
+            <a (click)="item.canEdit = true"><small>Edit</small></a>
             <a *ngIf="item.canEdit" (click)="item.canEdit = false" class="close"><small >Close</small></a>
             <div>
                 <p>{{ item.description }}</p>

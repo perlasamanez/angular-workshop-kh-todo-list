@@ -53,7 +53,6 @@ export class TodoListComponent implements OnInit {
     } else {
       console.log('No item added!');
     }
-      
       // Add this to remove the content in the input description
       this.todoItem.description = '';
       // testing purposes to see that our array of items is being populated!
