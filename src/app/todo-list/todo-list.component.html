@@ -11,12 +11,13 @@
 <div *ngIf="todoListItems.length">
     <div *ngFor="let item of todoListItems; index as i">
         <div>
+            <small (click)="item.canEdit = true">Edit</small>
+            <small (click)="item.canEdit = false">Close</small>
             <p>{{ item.description }}</p>
+            <input *ngIf="item.canEdit" [(ngModel)]="item.description"/>
         </div>
         <div>
             <button (click)="deleteItem(i)">Delete Item</button>
         </div>
     </div>
 </div>
-
-<!-- <app-todo-detail></app-todo-detail> -->

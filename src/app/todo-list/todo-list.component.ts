@@ -27,7 +27,7 @@ export class TodoListComponent implements OnInit {
   todoItem: Item;
   // Id is just generated here for simple purposes - no relation
   id: number;
-
+  
   constructor() {
    }
 
@@ -36,7 +36,8 @@ export class TodoListComponent implements OnInit {
     this.todoListItems = [];
     this.todoItem = {
       id: 0,
-      description: ''
+      description: '',
+      canEdit: false
     }
     this.id = 0;
   }
@@ -45,7 +46,8 @@ export class TodoListComponent implements OnInit {
   addItem(){
       this.todoListItems.push({
         id: this.id++,
-        description: this.todoItem.description
+        description: this.todoItem.description,
+        canEdit: false
       });
       // testing purposes to see that our array of items is being populated!
       console.log(this.todoListItems)
@@ -55,5 +57,9 @@ export class TodoListComponent implements OnInit {
   deleteItem(i: number) {
     this.todoListItems.splice(i, 1);
     console.log(this.todoListItems)
+  }
+
+  onSelect(item: Item) {
+    this.todoItem = item;
   }
 }
