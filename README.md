@@ -1,6 +1,10 @@
-# AngularWorkshopKhTodoList
+# Angular Workshop KH Todo List
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
+
+## Powerpoint Presentation
+
+For the presentation click [here](https://drive.google.com/file/d/1XsGU88NGzJEwUHQdJBdaBQAIA9suTpZn/view?usp=sharing).
 
 ## Development server
 
